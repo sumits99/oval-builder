@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div></div>
+
+    <div class="content">
+      <header>
+        <div>
+          
+        </div>
+      </header>
+      <main>
+        <div>
+          <section class="my-component">
+            <div id="input_textid" class="my-panel1" contenteditable>
+              sefsefefe
+            </div>
+            <div id="outputid" class="my-panel2" contenteditable>rgrdsgrdsrg</div>
+          </section>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+  <script>
+    document.getElementById(
+      'input_textid'
+    ).innerText = `7.4.0\n7.4.1\n7.4.3\n7.4.4\n7.8.0\n7.4.5\n7.7.4\n7.9.0\n7.8.1\n7.8.3\n7.10.0\n7.4.6\n7.9.1\n7.9.2`;
+
+    document.getElementById('outputid').innerText = `
+      
+      
+      
+      -----------------
+criterions
+
+<criteria applicability_check="false" operator="AND" negate="false" comment="Confluence Server Versions are supported">
+<criterion applicability_check="false" test_ref="oval:cs.org.05fop4j6h3:tst:1000961880" negate="false" comment="Check if the version of Confluence Server less than or equal to 7.4.6"/>
+<criterion applicability_check="false" test_ref="oval:cs.org.jrfgnp2zp5g:tst:1000623549" negate="false" comment="Check if the version of Confluence Server greater than or equal to 7.4.0"/>
+</criteria>
+
+<criteria applicability_check="false" operator="AND" negate="false" comment="Confluence Server Versions are supported">
+<criterion applicability_check="false" test_ref="oval:cs.org.auqlhusc0n:tst:1000675761" negate="false" comment="Check if the version of Confluence Server less than or equal to 7.8.3"/>
+<criterion applicability_check="false" test_ref="oval:cs.org.ctz4kmusgy:tst:1000048758" negate="false" comment="Check if the version of Confluence Server greater than or equal to 7.8.0"/>
+</criteria>
+
+<criterion applicability_check="false" test_ref="oval:cs.org.ayrlx3m8du:tst:1000422964" negate="false" comment="Check if the version of Confluence Server equals to 7.7.4"/>
+
+<criteria applicability_check="false" operator="AND" negate="false" comment="Confluence Server Versions are supported">
+<criterion applicability_check="false" test_ref="oval:cs.org.jke0vtpcbzi:tst:1000146263" negate="false" comment="Check if the version of Confluence Server less than or equal to 7.9.2"/>
+<criterion applicability_check="false" test_ref="oval:cs.org.cfmlkjsr0o:tst:1000159890" negate="false" comment="Check if the version of Confluence Server greater than or equal to 7.9.0"/>
+</criteria>
+
+<criterion applicability_check="false" test_ref="oval:cs.org.96y94g5bdh:tst:1000626341" negate="false" comment="Check if the version of Confluence Server equals to 7.10.0"/>
+
+-----------------
+tests
+
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.05fop4j6h3:tst:1000961880" comment="Check if the version of Confluence Server less than or equal to 7.4.6" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.547waufyzz:ste:1000224982"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.jrfgnp2zp5g:tst:1000623549" comment="Check if the version of Confluence Server greater than or equal to 7.4.0" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.7bw0szbcpvh:ste:1000879886"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.auqlhusc0n:tst:1000675761" comment="Check if the version of Confluence Server less than or equal to 7.8.3" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.9d9gue37g0k:ste:1000277004"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.ctz4kmusgy:tst:1000048758" comment="Check if the version of Confluence Server greater than or equal to 7.8.0" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.bvaoc554o5k:ste:1000709882"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.ayrlx3m8du:tst:1000422964" comment="Check if the version of Confluence Server equals to 7.7.4" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.8lfb8crey1:ste:1000869289"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.jke0vtpcbzi:tst:1000146263" comment="Check if the version of Confluence Server less than or equal to 7.9.2" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.6l25veavm4:ste:1000375238"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.cfmlkjsr0o:tst:1000159890" comment="Check if the version of Confluence Server greater than or equal to 7.9.0" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.wktzcgsxlx:ste:1000333247"/>
+</registry_test>
+<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.96y94g5bdh:tst:1000626341" comment="Check if the version of Confluence Server equals to 7.10.0" version="0" check="all" check_existence="at_least_one_exists" deprecated="false">
+  <object object_ref="oval:org.secpod.oval:obj:17046"/>
+  <state state_ref="oval:cs.org.7nl3j1n200f:ste:1000044731"/>
+</registry_test>
+-----------------
+states
+
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.547waufyzz:ste:1000224982" comment="State matches if Confluence Server version is less than or equal to 7.4.6" version="1" deprecated="false">
+  <value datatype="version" operation="less than or equal" mask="false">7.4.6</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.7bw0szbcpvh:ste:1000879886" comment="State matches if Confluence Server version is greater than or equal to 7.4.0" version="1" deprecated="false">
+  <value datatype="version" operation="greater than or equal" mask="false">7.4.0</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.9d9gue37g0k:ste:1000277004" comment="State matches if Confluence Server version is less than or equal to 7.8.3" version="1" deprecated="false">
+  <value datatype="version" operation="less than or equal" mask="false">7.8.3</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.bvaoc554o5k:ste:1000709882" comment="State matches if Confluence Server version is greater than or equal to 7.8.0" version="1" deprecated="false">
+  <value datatype="version" operation="greater than or equal" mask="false">7.8.0</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.8lfb8crey1:ste:1000869289" comment="State matches if Confluence Server version is equals to 7.7.4" version="1" deprecated="false">
+  <value datatype="version" operation="equals" mask="false">7.7.4</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.6l25veavm4:ste:1000375238" comment="State matches if Confluence Server version is less than or equal to 7.9.2" version="1" deprecated="false">
+  <value datatype="version" operation="less than or equal" mask="false">7.9.2</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.wktzcgsxlx:ste:1000333247" comment="State matches if Confluence Server version is greater than or equal to 7.9.0" version="1" deprecated="false">
+  <value datatype="version" operation="greater than or equal" mask="false">7.9.0</value>
+</registry_state>
+<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:cs.org.7nl3j1n200f:ste:1000044731" comment="State matches if Confluence Server version is equals to 7.10.0" version="1" deprecated="false">
+  <value datatype="version" operation="equals" mask="false">7.10.0</value>
+</registry_state>
+-----------------
+      
+      
+      
+      
+      `;
+  </script>
+</html>

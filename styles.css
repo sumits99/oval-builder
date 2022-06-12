@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 2em 1fr 1px;
+
+  height: 40em;
+}
+
+.my-panel1 {
+  border: 1 green solid;
+  color: rgb(19, 135, 236);
+  background-color: rgb(7, 7, 7);
+  padding: 0.25rem;
+
+  align-items: center;
+  grid-auto-flow: row;
+  grid-auto-rows: 25%;
+  grid-column-start: 0;
+  grid-column-end: 2;
+  grid-template-columns: unset;
+  grid-template-rows: unset;
+  overflow: scroll;
+}
+
+.my-panel2 {
+  border: 1 green solid;
+  color: rgb(19, 135, 236);
+  background-color: rgb(7, 7, 7);
+  padding: 0.25rem;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+  align-items: center;
+  grid-auto-flow: row;
+  grid-auto-rows: 25%;
+  overflow: scroll;
+}
+
+.my-component {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 0.5rem;
+  padding: 0.25rem;
+  height: 600px;
+}
+
+header {
+  border: green solid 1px;
+  padding: 4px;
+}
+
+header div {
+  height: 100px;
+}
+main {
+  height: 100%;
+  border: blue solid 1px;
+}
+
+
+footer {
+  border-bottom: black solid 1px;
+}
